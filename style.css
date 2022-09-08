@@ -1,0 +1,188 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+  background: #ef4444;
+}
+
+.qrcode-gen {
+  margin: auto;
+  max-width: 64rem;
+}
+
+.text {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.form {
+  margin-right: 6rem;
+  width: 100%;
+}
+
+.form h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  margin-left: 90px;
+  margin-bottom: 1.25rem;
+}
+
+.address {
+  margin-bottom: 1rem;
+  margin-left: 90px;
+}
+
+.form p {
+  margin-left: 90px;
+}
+
+.generate-form {
+  margin-top: 1rem;
+  margin-left: 100px;
+}
+
+.url {
+  width: 100%;
+  border-width: 2px;
+  border-color: #e5e7eb;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  color: rgba(44, 43, 43, 0.973);
+  margin-right: 0.5rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid hsl(0, 7%, 92%);
+}
+
+.url:focus {
+  outline: none;
+}
+
+.selection {
+  width: 100%;
+  border-width: 2px;
+  border-color: #e5e7eb;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  color: rgba(44, 43, 43, 0.973);
+  margin-right: 0.5rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid hsl(0, 7%, 92%);
+}
+
+.selection:focus {
+  outline: none;
+}
+
+.submit {
+  background-color: #383636;
+  border-radius: 0.25rem;
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.submit:hover {
+  background: #000000;
+}
+
+.code {
+  width: 100%;
+  align-items: center;
+}
+
+.code-img {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 2.5rem;
+}
+
+.generated-code {
+  max-width: 64rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.spinner {
+  display: inline;
+  margin-right: 0.5rem;
+  width: 6rem;
+  height: auto;
+  color: #e5e7eb;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+span .load {
+  position: absolute;
+  width: 1px;
+  height: auto;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#spinner {
+  display: none;
+}
+
+.qr-code {
+  margin: auto;
+}
+
+@media (min-width: 640px) {
+  .main {
+    max-width: 56rem;
+    padding: 2.5rem;
+    flex-direction: row;
+  }
+
+  .form {
+    width: 66.67%;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .code {
+    width: 33.33%;
+    align-self: center;
+  }
+
+  .code-img {
+    width: 100%;
+  }
+}
